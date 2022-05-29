@@ -1,0 +1,17 @@
+{
+  "name": "國民旅遊卡",
+  "main": "index.html",
+  "version": "0.0.2",
+  "window": {
+    "title": "Earn Coin",
+    "width": 1200,
+    "height": 800,
+    "min_width": 384,
+    "min_height": 640,
+    "position": "center"
+  },
+  "chromium-args": "--child-clean-exit",
+  "dependencies": {
+    "clipboard": "^1.7.1"
+  }
+}

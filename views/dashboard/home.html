@@ -1,0 +1,30 @@
+<div>
+
+	<div ng-if="apps">		
+		<!--div class="row">
+		   
+		<div class="input-group custom-search-form">
+			<input type="text" class="form-control" ng-model="searchKeyword.$" placeholder="Search name..."   />
+			 <span class="input-group-btn">
+						<button class="btn btn-default" type="button">
+						<i class="fa fa-search"></i>
+					</button>			
+				</span>
+			
+		</div>
+		</div-->
+		<!-- /.row -->
+		 
+		<div class="row">	
+			<stats ng-repeat="item in apps | filter:searchKeyword | orderBy:'-reward'"  
+				name="{{item.name}}" branch="{{item.default_branch}}" 
+				title="{{item.title}}" colour="primary" cat="{{item.cat}}" description="{{item.description}}"
+				homepage="{{item.homepage}}" time="{{item.time}}" reward="{{item.reward}}">
+			</stats>
+		</div>
+		<!-- /.row -->
+		                                      
+	</div>
+	<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+			
+</div>

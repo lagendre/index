@@ -1,0 +1,106 @@
+<div class="col-lg-3 col-md-6" style="min-width:190px;"  >
+    <div class="panel panel-{{colour}}" >
+        <div class="panel-heading" ng-class="{'opacity': isActive}">
+            <div class="row">	
+			
+			<a href="#" ng-click="open(name,homepage)" data-toggle="tooltip" title="Get {{title}} Details">
+				<div class="col-xs-3 col-md-6">
+						<svg height="80" width="80">
+							<circle cx="40" cy="40" r="40"  fill="purple" />
+							<text x="2" y="55" fill="white" style="font-size:38px;">{{title}}</text>
+						</svg>
+						<!--img src="https://raw.githubusercontent.com/earncoin/{{name}}/{{branch}}/icon.png"
+					  style="width:80px; height:80px;" /-->					
+				</div>
+				
+                <div class="col-xs-9 col-md-6 description">
+					<div ng-switch="cat">
+						<!--div ng-switch-when="ether">
+							<div>{{time}} mins</div>
+							<div>{{reward}} Gweis</div>
+						</div-->
+						<div ng-switch-when="Wallet">
+						</div>
+						<div ng-switch-when="exam">
+						</div>
+												
+						<div ng-switch-default>
+							<div>{{time}} mins</div>
+							<div>{{reward}} Satoshis</div>
+						</div>						
+					</div>
+					<div>{{description}}</div>
+                </div>			
+			</a>
+            </div>
+        </div>
+       
+            <div class="panel-footer">
+				
+	
+			<div ng-switch="cat">		
+				<!--div ng-switch-when="Bitcoin">	
+						<a href="{{homepage}}" target="_blank"  ng-click="countdown(time)" >
+							<span class="pull-left">
+							<i class="fa fa-btc"></i>
+						<b>{{title}}</b>
+							</span>
+						
+						<span class="pull-right">
+							<div ng-if="counter">
+								<i>{{counter}}</i>
+							</div>
+							<div ng-if="!counter">
+								<i class="fa fa-clock-o fa-lg" aria-hidden="true"></i>
+							</div>
+						</span>
+						</a>
+				 </div-->
+				
+				<div ng-switch-when="exam">
+					<a href="{{homepage}}" target="_blank">
+						<span class="pull-left">						
+						<i class="fa fa-link"></i>
+						{{title}}
+						</span>
+						<span class="pull-right">
+							<i class="fa fa-arrow-circle-right fa-lg"></i>
+						</span>
+					</a>
+                </div>
+				<div ng-switch-when="Wallet">
+					<a href="{{homepage}}" target="_blank">
+						<span class="pull-left">					
+						<i class="fa fa-link"></i>
+						{{title}}
+						</span>
+						<span class="pull-right">
+							<i class="fa fa-arrow-circle-right"></i>
+						</span>
+					</a>
+                </div>
+				
+				 <div ng-switch-default>		
+						<a href="{{homepage}}" target="_blank" ng-click="countdown(time)" >
+							<span class="pull-left">						
+							<i class="fa fa-money"></i>
+							<b>{{title}}</b>
+							</span>
+							<span class="pull-right">
+							<div ng-if="counter">
+								<i>{{counter}}</i>
+							</div>
+							<div ng-if="!counter">
+								<i class="fa fa-clock-o fa-lg"></i>
+
+							</div>
+							</span>
+						</a>					
+				 </div>
+				 
+			</div>
+                <div class="clearfix"></div>
+            </div>
+       
+    </div>
+</div>

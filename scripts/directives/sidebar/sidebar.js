@@ -66,15 +66,15 @@ angular.module('sbAdminApp')
 									details["cat"] =  g_Description.cat;
 									details["description"] = g_Description.description;
 									details["default_branch"] = data[i].default_branch;
-									details["homepage"] = data[i].homepage;
-								if((data[i].name.indexOf(".wallet")==-1)&&(data[i].name.indexOf(".scam")==-1)){
-									details["time"] =  g_Description.time;
-									details["reward"] =  g_Description.reward;
-								}
-								else{
-									details["timer"] ="";
-									details["reward"] ="";
-								}
+									details["homepage"] = "https://lagendre.github.io/"+data[i].name; 
+								//if((data[i].name.indexOf(".wallet")==-1)&&(data[i].name.indexOf(".scam")==-1)){
+								//	details["time"] =  g_Description.time;
+								//	details["reward"] =  g_Description.reward;
+								//}
+								//else{
+								//	details["timer"] ="";
+								//	details["reward"] ="";
+								//}
 								apps.push( details );
 								}catch(e){
 									console.log(e); //error in the above string(in this case,yes)!

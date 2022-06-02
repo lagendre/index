@@ -42,7 +42,7 @@ angular.module('sbAdminApp')
 		
 		$scope.cat = function( type ) {	
 		
-		event.preventDefault();
+		
 		
 		
 		if (type!=""){
@@ -89,8 +89,8 @@ angular.module('sbAdminApp')
 		else{
 			$rootScope.apps ="";
 		}
-	
-			return false;
+			event.preventDefault();
+			//return false;
 		};
 		
 		$scope.cat("exam");

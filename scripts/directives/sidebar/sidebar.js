@@ -89,7 +89,7 @@ angular.module('sbAdminApp')
 		else{
 			$rootScope.apps ="";
 		}
-			event.preventDefault();
+			
 			//return false;
 		};
 		

@@ -18,7 +18,7 @@ angular.module('sbAdminApp')
       controller:function($scope, $rootScope,  $http , $location , $anchorScroll){
         //$scope.selectedMenu = 'dashboard.price';
 		//$("#bitcoin").focus();
-		
+	/*	
         $scope.collapseVar = 2;
 		
         $scope.multiCollapseVar = 0;
@@ -38,7 +38,7 @@ angular.module('sbAdminApp')
           else
             $scope.multiCollapseVar = y;
         };
-		
+	*/	
 		
 		$scope.cat = function( type ) {	
 		

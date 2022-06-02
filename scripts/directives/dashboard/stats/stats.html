@@ -2,8 +2,7 @@
     <div class="panel panel-{{colour}}" >
         <div class="panel-heading" ng-class="{'opacity': isActive}">
             <div class="row">	
-			
-			<a href="#" ng-click="open(name,homepage)" data-toggle="tooltip" title="Get {{title}} Details">
+			<a href="{{homepage}}" data-toggle="tooltip" title="Goto {{title}} App" target="_blank">
 				<div class="col-xs-3 col-md-6">
 						<svg height="80" width="80">
 							<circle cx="40" cy="40" r="40"  fill="purple" />
@@ -58,7 +57,7 @@
 				 </div-->
 				
 				<div ng-switch-when="exam">
-					<a href="{{homepage}}" target="_blank">
+					<a href="#" ng-click="open(name,homepage)" data-toggle="tooltip" title="Get {{title}} Details">
 						<span class="pull-left">						
 						<i class="fa fa-link"></i>
 						{{title}}

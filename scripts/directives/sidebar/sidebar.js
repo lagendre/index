@@ -42,7 +42,7 @@ angular.module('sbAdminApp')
 		
 		$scope.cat = function( type ) {	
 		
-		event.preventDefault();
+		
 		
 		
 		if (type!=""){

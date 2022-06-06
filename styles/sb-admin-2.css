@@ -10,7 +10,7 @@ body {
 
 #wrapper {
     width: 100%;
-    background-color:Purple;
+    background-color:#6f42c1;
 
 }
 
@@ -49,7 +49,7 @@ body {
 }
 
 .navbar-default {
-    background-color:Purple !important; 
+    background-color:#6f42c1 !important; 
     border-color: #555 !important;
 }
 
